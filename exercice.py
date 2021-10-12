@@ -2,22 +2,40 @@
 # -*- coding: utf-8 -*-
 
 import random
+# Question 1
 
 def is_even_len(string):
-	return 0xDEADBEEF
+	longueur_chaine = len(string)
+	if longueur_chaine % 2 == 0:
+		print("pair")
+	else:
+		print("impair")
 
+	return longueur_chaine
+
+# Question 2
 
 def get_num_char(string, char):
-	return 0xDEADBABE
+	lettre_debut = 0
 
+	for char in string:
+		lettre_debut +=1
+
+	return lettre_debut
+
+# Question 3
 
 def get_first_part_of_name(name):
-	return ""
+	nouveau_mot = name[0:4]
+	nouveau_mot_majuscule = nouveau_mot.capitalize()
+	print("Bonjour" + " " + str(nouveau_mot_majuscule))
+	return nouveau_mot_majuscule
 
+# Question 4
 
 def get_random_sentence(animals, adjectives, fruits):
-	return ""
 
+	reponse = print("Bonjour, aujourd'hui j'ai vu un " + str(animals[1]) + " s'emparer d'un panier " + str(adjectives[2]) + " plein de " + str(fruits[1]))
 
 if __name__ == "__main__":
 	spam = "Bonjour!"
